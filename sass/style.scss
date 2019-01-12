@@ -1,8 +1,9 @@
 // Here's where we define some default constants
 @import "partials/base";
 
-@mixin flexbox ($justifyContent,$alignItems){
+@mixin flexbox ($flexDirection, $justifyContent, $alignItems){
     display:flex;
+    flex-direction:$flexDirection;
     justify-content:$justifyContent;
     align-items:$alignItems;
 }
@@ -34,7 +35,7 @@ img{
     -webkit-box-shadow: 10px 10px 14px -5px rgba(224,221,224,1);
     -moz-box-shadow: 10px 10px 14px -5px rgba(224,221,224,1);
     box-shadow: 10px 10px 14px -5px rgba(224,221,224,1);
-    @include flexbox(space-between, center);
+    @include flexbox(row, space-between, center);
 
     .imagen{
         width:$border-radius1;
@@ -50,7 +51,7 @@ img{
         .cajadetextos{
             width:100%;
             height:60%;
-            @include flexbox(space-between,center);
+            @include flexbox(row, space-between,flex-start);
             .texto{
                 width:50%;
                 height:100%;
@@ -69,7 +70,7 @@ img{
             padding:0;
             box-sizing: border-box;
             list-style-type:none;
-            @include flexbox(space-between, center);
+            @include flexbox(row, space-between, center);
             li{
                 width: $border-radius2;
                 height: $border-radius2;
@@ -82,9 +83,49 @@ img{
     }
 }
 @media screen and (max-width: 1024px) {
-    
+    .contenedor{
+        width:90%;
+        height:2000px;
+        padding:5% 2% 2% 2%;
+        margin:auto;
+        @include flexbox(column, flex-start, center);
+
+        .imagen{
+            margin-bottom: 30px;
+        }
+        .informacion{
+            height: auto;
+
+            ul{
+                background: grey;
+                height: 300px;
+                margin-top:30px;
+                @include flexbox(row, space-between, flex-start);
+
+                li:nth-child(2){
+                    justify-content:flex-end;
+                    /*align-self:flex-end;
+                    order:3;*/
+                    border: solid 6px red;
+                }
+
+                li:nth-child(3){
+                    align-self:center;
+                    border: solid 6px yellow;
+                }
+
+                li:nth-child(4){
+                    align-self:flex-start;
+                    align-self: flex-end;
+                    border: solid 6px green;
+                }
+
+                li:nth-child(5){
+                    align-self:flex-end;
+                    border: solid 6px aqua;
+                }
+
+            }
+        }   
+    }
 }
-
-
-
-
