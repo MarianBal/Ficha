@@ -9,6 +9,8 @@
 
 body{
     margin: 0;
+    padding: 0;
+    font-family: 'Fira Sans', sans-serif;
     background: -moz-linear-gradient(90deg, #ffffff 0%, #D6D6D6 100%); /* ff3.6+ */
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #D6D6D6), color-stop(100%, #ffffff)); /* safari4+,chrome */
     background: -webkit-linear-gradient(90deg, #ffffff 0%, #D6D6D6 100%); /* safari5.1+,chrome10+ */
@@ -44,9 +46,27 @@ img{
     .informacion{
         width:60%;
         height:100%;
-        background:red;
+        .cajadetextos{
+            width:100%;
+            height:60%;
+            /*background:grey;*/
+            @include flexbox(space-between,center);
+            .texto{
+                width: 50%;
+                height: 100%;
+                box-sizing: border-box;
+                /*background: green;*/
+                padding:2%;
+                font-size: 15 px;
+                line-height: 150%;
+                span{
+                    font-weight: bold;
+                }
+            }
+        }
     }
 }
+
 
 
 
