@@ -1,0 +1,24 @@
+// Here's where we define some default constants
+@import "partials/base";
+
+@mixin centrar (){
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+body{
+    margin:0;
+}
+
+.contenedor{
+    width:70%;
+    height:500px;
+    background-color: red;
+    margin:auto;
+    @include centrar();
+}
+
+
+
