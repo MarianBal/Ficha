@@ -97,32 +97,30 @@ img{
             height: auto;
 
             ul{
-                background: grey;
                 height: 300px;
                 margin-top:30px;
                 @include flexbox(row, space-between, flex-start);
+                flex-wrap: wrap;
+
+                li{
+                    display: inline;
+                }
 
                 li:nth-child(2){
-                    justify-content:flex-end;
-                    /*align-self:flex-end;
-                    order:3;*/
-                    border: solid 6px red;
+                    
                 }
 
                 li:nth-child(3){
                     align-self:center;
-                    border: solid 6px yellow;
+
                 }
 
                 li:nth-child(4){
-                    align-self:flex-start;
-                    align-self: flex-end;
-                    border: solid 6px green;
+                    align-self:flex-end;
                 }
 
                 li:nth-child(5){
                     align-self:flex-end;
-                    border: solid 6px aqua;
                 }
 
             }

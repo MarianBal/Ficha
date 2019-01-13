@@ -121,35 +121,28 @@ img {
   }
   /* line 99, ../sass/style.scss */
   .contenedor .informacion ul {
-    background: grey;
     height: 300px;
     margin-top: 30px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
+    flex-wrap: wrap;
   }
   /* line 105, ../sass/style.scss */
-  .contenedor .informacion ul li:nth-child(2) {
-    align-self: auto;/*: flex-end;
-    /*align-self:flex-end;
-    order:3;*/
-    border: solid 6px red;
+  .contenedor .informacion ul li {
+    display: inline;
   }
-  /* line 112, ../sass/style.scss */
+  /* line 113, ../sass/style.scss */
   .contenedor .informacion ul li:nth-child(3) {
     align-self: center;
-    border: solid 6px yellow;
   }
-  /* line 117, ../sass/style.scss */
+  /* line 118, ../sass/style.scss */
   .contenedor .informacion ul li:nth-child(4) {
-    justify-content: flex-start;
     align-self: flex-end;
-    border: solid 6px green;
   }
-  /* line 123, ../sass/style.scss */
+  /* line 122, ../sass/style.scss */
   .contenedor .informacion ul li:nth-child(5) {
     align-self: flex-end;
-    border: solid 6px aqua;
   }
 }
