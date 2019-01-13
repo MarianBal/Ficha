@@ -85,7 +85,7 @@ img{
 @media screen and (max-width: 1024px) {
     .contenedor{
         width:90%;
-        height:2000px;
+        height:auto;
         padding:5% 2% 2% 2%;
         margin:auto;
         @include flexbox(column, flex-start, center);
@@ -117,6 +117,7 @@ img{
 
                 li:nth-child(4){
                     align-self:flex-end;
+
                 }
 
                 li:nth-child(5){
