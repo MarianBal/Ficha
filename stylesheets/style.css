@@ -90,7 +90,7 @@ img {
   align-items: center;
 }
 /* line 74, ../sass/style.scss */
-.contenedor .informacion ul li {
+.contenedor .informacion ul .middle-image, .contenedor .informacion ul li {
   width: 80px;
   height: 80px;
   -webkit-border-radius: 80px;
@@ -121,6 +121,7 @@ img {
   }
   /* line 99, ../sass/style.scss */
   .contenedor .informacion ul {
+    width: 100%;
     height: 300px;
     margin-top: 30px;
     display: flex;
@@ -130,19 +131,11 @@ img {
     flex-wrap: wrap;
   }
   /* line 105, ../sass/style.scss */
-  .contenedor .informacion ul li {
-    display: inline;
-  }
-  /* line 113, ../sass/style.scss */
-  .contenedor .informacion ul li:nth-child(3) {
-    align-self: center;
-  }
-  /* line 118, ../sass/style.scss */
-  .contenedor .informacion ul li:nth-child(4) {
-    align-self: flex-end;
-  }
-  /* line 123, ../sass/style.scss */
-  .contenedor .informacion ul li:nth-child(5) {
-    align-self: flex-end;
+  .contenedor .informacion ul div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }
