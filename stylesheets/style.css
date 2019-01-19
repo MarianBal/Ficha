@@ -90,7 +90,7 @@ img {
   align-items: center;
 }
 /* line 78, ../sass/style.scss */
-.contenedor .informacion ul .middle-image, .contenedor .informacion ul li {
+.contenedor .informacion ul li {
   width: 80px;
   height: 80px;
   -webkit-border-radius: 80px;
@@ -104,7 +104,7 @@ img {
   .contenedor {
     width: 90%;
     height: auto;
-    padding: 5% 2% 2% 2%;
+    padding: 5% 1% 2% 1%;
     margin: auto;
     display: flex;
     flex-direction: column;

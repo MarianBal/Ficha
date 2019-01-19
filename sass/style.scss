@@ -75,7 +75,7 @@ img{
             box-sizing: border-box;
             list-style-type:none;
             @include flexbox(row, space-between, center);
-            .middle-image, li{
+            li{
                 width: $border-radius2;
                 height: $border-radius2;
                 @include borderRadius($border-radius2);
@@ -88,7 +88,7 @@ img{
     .contenedor{
         width:90%;
         height:auto;
-        padding:5% 2% 2% 2%;
+        padding:5% 1% 2% 1%;
         margin:auto;
         @include flexbox(column, flex-start, center);
 
