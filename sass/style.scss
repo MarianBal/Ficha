@@ -100,10 +100,17 @@ img{
 
             ul{
                 width:100%;
-                height: 400px;
+                height: 500px;
                 margin-top:30px;
                 @include flexbox(row, space-between, flex-start);
                 flex-wrap: wrap;
+
+                li, .middle-image{
+                        width: $border-radius3;
+                        height: $border-radius3;
+                        @include borderRadius($border-radius3);
+                        overflow:hidden;
+                }
                 div{
                     width: 100%;
                     @include flexbox(column, center, center);
