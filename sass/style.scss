@@ -96,6 +96,7 @@ img{
             margin-bottom: 30px;
         }
         .informacion{
+            width: 75%;
             height: auto;
 
             ul{
@@ -110,11 +111,11 @@ img{
                         height: $border-radius3;
                         @include borderRadius($border-radius3);
                         overflow:hidden;
+                        @include flexbox(row, center, center);
                 }
                 div{
                     width: 100%;
                     @include flexbox(column, center, center);
-
                 }
             }
         }   

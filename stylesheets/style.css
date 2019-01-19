@@ -117,9 +117,10 @@ img {
   }
   /* line 98, ../sass/style.scss */
   .contenedor .informacion {
+    width: 75%;
     height: auto;
   }
-  /* line 101, ../sass/style.scss */
+  /* line 102, ../sass/style.scss */
   .contenedor .informacion ul {
     width: 100%;
     height: 500px;
@@ -130,7 +131,7 @@ img {
     align-items: flex-start;
     flex-wrap: wrap;
   }
-  /* line 108, ../sass/style.scss */
+  /* line 109, ../sass/style.scss */
   .contenedor .informacion ul li, .contenedor .informacion ul .middle-image {
     width: 110px;
     height: 110px;
@@ -138,8 +139,12 @@ img {
     -moz-border-radius: 110px;
     border-radius: 110px;
     overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
   }
-  /* line 114, ../sass/style.scss */
+  /* line 116, ../sass/style.scss */
   .contenedor .informacion ul div {
     width: 100%;
     display: flex;
