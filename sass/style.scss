@@ -8,6 +8,12 @@
     align-items:$alignItems;
 }
 
+@mixin borderRadius($borderRadius){
+    -webkit-border-radius: $borderRadius;
+    -moz-border-radius: $borderRadius;
+    border-radius: $borderRadius;
+}
+
 body{
     margin: 0;
     padding: 0;
@@ -40,9 +46,7 @@ img{
     .imagen{
         width:$border-radius1;
         height:$border-radius1;
-        -webkit-border-radius: $border-radius1;
-        -moz-border-radius: $border-radius1;
-        border-radius: $border-radius1;
+        @include borderRadius($border-radius1);
         overflow:hidden;
     }
     .informacion{
@@ -74,9 +78,7 @@ img{
             .middle-image, li{
                 width: $border-radius2;
                 height: $border-radius2;
-                -webkit-border-radius: $border-radius2;
-                -moz-border-radius: $border-radius2;
-                border-radius: $border-radius2;
+                @include borderRadius($border-radius2);
                 overflow:hidden;
             }
         }
@@ -98,7 +100,7 @@ img{
 
             ul{
                 width:100%;
-                height: 300px;
+                height: 400px;
                 margin-top:30px;
                 @include flexbox(row, space-between, flex-start);
                 flex-wrap: wrap;
